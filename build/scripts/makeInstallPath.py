@@ -24,5 +24,5 @@ def installPath(package_name):
     
     install_path = "%s-%s-r%s" % (package_name,install_suffix,os.environ.get('GIT_COMMIT', ''))
     #install_path = "%s-%s-r%s" % (package_name,install_suffix,os.environ.get('SVN_REVISION', ''))
-    install_path = join('..', install_path)
+    #install_path = join('..', install_path)
     return install_path
