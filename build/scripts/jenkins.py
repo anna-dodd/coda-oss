@@ -81,6 +81,7 @@ for f in glob.glob('%s-*' % package_name):
         os.remove(f)
 
 check_call(["python", "waf", "distclean"])
+print os.getcwd()
 check_call(["python", "waf", "configure", "--prefix=%s" % install_path] + config_options)
 check_call(["python", "waf", "list"])
 check_call(["python", "waf", "msvs"])
