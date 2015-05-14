@@ -70,8 +70,6 @@ print "Revision: %s" % os.environ.get('SVN_REVISION', '')
 print "LD_LIBRARY_PATH: %s" % os.environ.get('LD_LIBRARY_PATH','')
 
 install_path = installPath(package_name)
-print 'install_path: '
-print install_path
 
 os.chdir(build_dir)
 for f in glob.glob('%s-*' % package_name):
