@@ -69,8 +69,6 @@ print 'Job: %s' % os.environ.get('JOB_NAME', '')
 print "Revision: %s" % os.environ.get('SVN_REVISION', '')
 print "LD_LIBRARY_PATH: %s" % os.environ.get('LD_LIBRARY_PATH','')
 
-print 'Beginning waf check_calls:'
-print os.getcwd()
 install_path = installPath(package_name)
 print 'install_path: '
 print install_path
